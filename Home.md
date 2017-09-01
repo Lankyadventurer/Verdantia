@@ -12,4 +12,4 @@ We hope that you will be patient with us under such changes, but fear not, as th
 
 Being a tight-knit community, it's easy for rules and expectations to go unspoken. For the betterment of the server, some rules and guidelines are listed below.
 
-[Rules and Guidelines](./Rules.md)
+[Rules and Guidelines](./Rules)
