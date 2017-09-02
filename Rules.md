@@ -20,6 +20,12 @@ No random killing sprees.
 They have the final say in player conflicts.
 If you have doubt, contact another admin or the owner through Discord or in-game chat, and it will be investigated.
 
+## Currency
+
+There is a currency system in place for player and NPC transactions. It is basically `9 iron = 1 gold` ratio (i.e. 9 iron ingots = 1 gold ingot).
+
+![Currency infographic](currency.png)
+
 ## Roleplay Guidelines
 
 1. **Try to stay in-character.**
