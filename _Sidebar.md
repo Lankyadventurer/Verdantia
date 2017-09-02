@@ -1,0 +1,4 @@
+# Navigation
+
+* [[Home]]
+* [[Rules]]
