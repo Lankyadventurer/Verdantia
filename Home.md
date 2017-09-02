@@ -6,9 +6,9 @@ More to come soon!
 ## Introduction
 
 This realm is one of adventure, heroes, and magic.
-The ability to shape the world and it's outcome rests upon each player. On this server we expect players to come up with a character to present themselves as.
+The ability to shape the world and its outcome rests upon each player. On this server we expect players to come up with a character to present themselves.
 With the hope of bringing much versatility to individuals and their choices, the server is constantly developing and evolving.
-We hope that you will be patient with us under such changes, but fear not, as the community is often gauged before any permanent decisions are made. 
+We hope that you will be patient with us under such changes. But fear not! The community is often engaged before any permanent decisions are made. 
 
 Being a tight-knit community, it's easy for rules and expectations to go unspoken. For the betterment of the server, some rules and guidelines are listed below.
 
