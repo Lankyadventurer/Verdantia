@@ -1,5 +1,6 @@
 * [[Home]]
 * [[Rules]]
+* [[Quickstart]]
 
 ## Races
 * [Humans](/Lankyadventurer/Verdantia/wiki/Humans)
