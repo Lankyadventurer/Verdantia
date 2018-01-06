@@ -16,3 +16,5 @@
 * [Bard](/Lankyadventurer/Verdantia/wiki/Bard)
 * [Ranger](/Lankyadventurer/Verdantia/wiki/Ranger)
 * [Wizard](/Lankyadventurer/Verdantia/wiki/Wizard)
+
+## Locations
