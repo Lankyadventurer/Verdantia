@@ -18,3 +18,6 @@
 * [Wizard](/Lankyadventurer/Verdantia/wiki/Wizard)
 
 ## Locations
+## Factions
+## Monsters 
+## Entities of Note
