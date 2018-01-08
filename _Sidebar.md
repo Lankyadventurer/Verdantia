@@ -18,6 +18,11 @@
 * [Wizard](/Lankyadventurer/Verdantia/wiki/Wizard)
 
 ## Locations
+* [Alfreyr](/Lankyadventurer/Verdantia/wiki/Alfreyr)
+* [Eir'Solum](/Lankyadventurer/Verdantia/wiki/Eir'Solum)
+* [Mistral](/Lankyadventurer/Verdantia/wiki/Mistral)
+* [Taiyra](/Lankyadventurer/Verdantia/wiki/Taiyra)
+
 ## Factions
 ## Monsters 
 ## Entities of Note
