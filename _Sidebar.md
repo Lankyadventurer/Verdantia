@@ -22,7 +22,7 @@
 * [Eir'Solum](/Lankyadventurer/Verdantia/wiki/Eir'Solum)
 * [Mistral](/Lankyadventurer/Verdantia/wiki/Mistral)
 * [Taiyra](/Lankyadventurer/Verdantia/wiki/Taiyra)
-* [Common Grounds](/Lankyadventurer/Verdantia/wiki/Common Grounds)
+* [Common Grounds](/Lankyadventurer/Verdantia/wiki/Common-Grounds)
 
 ## Factions
 ## Monsters 
