@@ -4,7 +4,4 @@ The barkeep, Danno Deviti, sells custom potions that he brews himself. Some are 
 
 Also in the area is a Windmill, 
 
-(https://imgur.com/Y5r53mt)
-
-[Imgur](https://i.imgur.com/UkabXCU.png)
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="UkabXCU"><a href="//imgur.com/UkabXCU"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
