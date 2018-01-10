@@ -2,6 +2,8 @@ The Common Grounds is an area on the massive island of Sonorous. It is used as a
 
 The barkeep, Danno Deviti, sells custom potions that he brews himself. Some are expensive, some are not. Some are useful, some are not.
 
-Also in the area is a Windmill, 
+Also in the area is a Windmill, The Birch Brother's Sundry, a Bakery, and a shop that CERTAINLY DOES NOT sell weapons.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="UkabXCU"><a href="//imgur.com/UkabXCU"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+To return back home, Adventurers use the strange warp gate at the top of the hill.
+
+
