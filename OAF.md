@@ -1,0 +1,2 @@
+The Orcish Archaeological Foundation is one of dignity, intelligence, and applied research. 
+Based in the territory of Taiyra, this organization is devoted to the study of ancient sites, whether it be tombs, city ruins, interesting developments in land, or powerful artifacts from ages past. Anyone can participate or aid the Foundation, though becoming an official member is a bit more of a tricky feat.
