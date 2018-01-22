@@ -1,7 +1,7 @@
 ## General Rules
 
 1. **Treat others with respect.**
-If you disagree with someone, discuss the topic with civility, or change the subject.
+If you disagree with someone, discuss the topic with civility or change the subject.
 
 2. **Do not grief player-made structures.**
 Someone worked hard on that building. 
