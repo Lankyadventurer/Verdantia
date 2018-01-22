@@ -1,6 +1,6 @@
 ## Welcome to the Verdantia Wiki!
 
-This is an attempt to create a much more friendly to use and read lore/feature details section for the server.
+This is an attempt to organize lore and feature details for the server.
 More to come soon!
 
 ## Introduction
@@ -10,6 +10,6 @@ The ability to shape the world and its outcome rests upon each player. On this s
 With the hope of bringing much versatility to individuals and their choices, the server is constantly developing and evolving.
 We hope that you will be patient with us under such changes. But fear not! The community is often engaged before any permanent decisions are made. 
 
-Being a tight-knit community, it's easy for rules and expectations to go unspoken. For the betterment of the server, some rules and guidelines are listed below.
+It's easy for rules and expectations to go unspoken within a tight-knit community. For the livelihood of the server, some rules and guidelines are have been written out.
 
 [Rules and Guidelines](./Rules)
