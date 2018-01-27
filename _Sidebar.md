@@ -29,6 +29,8 @@
 * [Rogue's Guild](/Lankyadventurer/Verdantia/wiki/RoguesGuild)
 * [Sonorous](/Lankyadventurer/Verdantia/wiki/sonorous)
 * [Temple of Forbearance](/Lankyadventurer/Verdantia/wiki/Forbearance)
+* [Teravale](/Lankyadventurer/Verdantia/wiki/Teravale)
+
 
 ## Factions
 * [Orcish Archaeological Foundation](/Lankyadventurer/Verdantia/wiki/OAF)
