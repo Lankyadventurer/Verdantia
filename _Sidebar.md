@@ -35,6 +35,7 @@
 ## Factions
 * [Orcish Archaeological Foundation](/Lankyadventurer/Verdantia/wiki/OAF)
 * [Dark Sun Cult](/Lankyadventurer/Verdantia/wiki/DarkSunCult)
+* [Morkos](/Lankyadventurer/Verdantia/wiki/Morkos)
 
 ## Monsters 
 * [Djiin](/Lankyadventurer/Verdantia/wiki/djiin)
