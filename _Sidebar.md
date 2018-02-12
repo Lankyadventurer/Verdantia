@@ -27,7 +27,7 @@
 * [Kringletown](/Lankyadventurer/Verdantia/wiki/Kringletown)
 * [Ranger's Enclave](/Lankyadventurer/Verdantia/wiki/Enclave)
 * [Rogue's Guild](/Lankyadventurer/Verdantia/wiki/RoguesGuild)
-* [Sonorous](/Lankyadventurer/Verdantia/wiki/sonorous)
+* [Sonorous](/Lankyadventurer/Verdantia/wiki/Sonorous)
 * [Temple of Forbearance](/Lankyadventurer/Verdantia/wiki/Forbearance)
 * [Teravale](/Lankyadventurer/Verdantia/wiki/Teravale)
 
