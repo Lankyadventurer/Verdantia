@@ -5,5 +5,3 @@ The barkeep, Danno Deviti, sells custom potions that he brews himself. Some are 
 Also in the area is a Windmill, The Birch Brother's Sundry, a Bakery, and a shop that CERTAINLY DOES NOT sell weapons.
 
 To return back home, Adventurers use the strange warp gate at the top of the hill.
-
-

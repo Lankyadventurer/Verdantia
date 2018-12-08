@@ -10,7 +10,7 @@ The ability to shape the world and its outcome rests upon each player. On this s
 
 With the hope of bringing much versatility to individuals and their choices, the server is constantly developing and evolving.
 
-We hope that you will be patient with us under such changes. But fear not! The community is often engaged before any permanent decisions are made. 
+We hope that you will be patient with us under such changes. But fear not! The community is often engaged before any permanent decisions are made.
 
 It's easy for rules and expectations to go unspoken within a tight-knit community. For the livelihood of the server, some rules and guidelines are have been written out.
 
