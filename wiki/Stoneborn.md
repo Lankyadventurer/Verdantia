@@ -1,3 +1,8 @@
+---
+title: Stoneborn
+category: Races
+---
+
 Commonly known as `Dwarves` among other races. The Stoneborn are a proud, stout species of incredible strength and ingenuity. Residing within the mountain stronghold of Eir'Solum, they make great warriors and guardsmen.
 
 Those less inclined to battle seek glory through redstone science or the smithing art. Dwarves are known to be skilled enchanters -- imbuing their gear and weapons with great power.

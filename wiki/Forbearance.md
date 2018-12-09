@@ -1,3 +1,8 @@
+---
+title: Temple of Forbearance
+category: Locations
+---
+
 "Water is patient. Learn from it."
 
 These are the teachings of the Temple of Forbearance, the origin point of many, if not all, Clerics.

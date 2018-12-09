@@ -1,5 +1,5 @@
 ---
-title: Mistral
+title: Rogue's Guild
 category: Locations
 ---
 

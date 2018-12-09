@@ -1,3 +1,8 @@
+---
+title: Var'Magnus
+category: Locations
+---
+
 The Stoneborn are heralded as one of the most steadfast races in all of Verdantia. The creation of vast and mighty fortresses, both above and below ground, is their forte.
 
 So what caused this Kingdom to fail?

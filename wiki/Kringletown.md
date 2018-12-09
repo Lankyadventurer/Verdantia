@@ -1,5 +1,5 @@
 ---
-title: Mistral
+title: Kringletown
 category: Locations
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Mistral
+title: Ranger's Enclave
 category: Locations
 ---
 
