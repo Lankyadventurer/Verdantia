@@ -11,6 +11,7 @@ const HeaderTitle = styled.section`
   font-size: 2em;
 
   a {
+    display: inline-block;
     text-decoration: none;
   }
 `

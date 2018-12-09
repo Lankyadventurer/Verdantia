@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const NavStyles = styled.nav`
-  font-size: 1.5em;
+  font-size: 1.25em;
 
   a {
     display: inline-block;
@@ -15,6 +15,7 @@ const NavStyles = styled.nav`
 export const Nav = props => (
   <NavStyles>
     <Link to='/'>Home</Link>
+    <Link to='/wiki'>Wiki</Link>
   </NavStyles>
 )
 

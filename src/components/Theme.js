@@ -8,10 +8,10 @@ import 'typeface-montserrat'
 const theme = {
   displayFont: `'Croissant One', cursive`,
   baseFont: `'Montserrat', Arial, Helvetica, sans-serif`,
-  primaryColor: '#c12c1b',
+  primaryColor: '#118a16',
   accentColor: '#ce7919',
-  backgroundColor: '#fffec7',
-  black: '#5a5a5a',
+  backgroundColor: '#ffffff',
+  black: '#555',
   white: '#fefefe'
 }
 
@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 
     &:focus {
-      outline: 0.1rem dotted ${props => props.theme.black};
+      /* outline: 0.1rem dotted ${props => props.theme.black}; */
     }
 
     &::selection {
