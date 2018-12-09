@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Page from '../templates/Page'
+
 export const HomePage = props => (
-  <div>
+  <Page>
     <h1>Hello!</h1>
-  </div>
+  </Page>
 )
 
 export default HomePage

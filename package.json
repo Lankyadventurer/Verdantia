@@ -8,15 +8,18 @@
     "format": "npm run prettier && npm run lint -- --fix",
     "lint": "eslint .",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|yml|yaml|css|less|ts|md|graphql|mdx)\"",
-    "test": "npm run lint && npm run type && jest --coverage",
-    "type": "tsc --pretty"
+    "test": "npm run lint && jest --coverage"
   },
   "license": "n/a",
   "main": "n/a",
-  "author": "Mark Hernandez <mark@lion-byte.com>",
+  "contributors": [
+    "Mark Hernandez <mark@lion-byte.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Lankyadventurer/Verdantia.git"
+  },
   "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "@types/node": "^10.12.10",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "eslint": "^5.9.0",
@@ -30,12 +33,23 @@
     "husky": "^1.2.0",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
-    "prettier": "^1.15.2",
-    "typescript": "^3.1.3"
+    "prettier": "^1.15.2"
   },
   "dependencies": {
+    "@reach/skip-nav": "^0.1.1",
+    "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.64",
+    "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-plugin-sharp": "^2.0.15",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.11",
+    "gatsby-transformer-remark": "^2.1.15",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.1.2",
+    "typeface-croissant-one": "0.0.54",
+    "typeface-montserrat": "0.0.54"
   }
 }
