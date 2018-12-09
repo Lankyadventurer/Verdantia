@@ -1,5 +1,7 @@
 # Babel Compiled Output
 dist/
+.cache/
+public/
 
 # Logs
 logs
