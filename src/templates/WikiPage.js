@@ -1,8 +1,18 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+
+const WikiEntry = styled.article`
+  .description {
+    code {
+      background-color: ${props => props.theme.offWhite};
+      padding: 0 0.75ch;
+    }
+  }
+`
 
 /**
  * @param {object} props
@@ -18,17 +28,20 @@ export const WikiPage = props => {
     data: { wiki }
   } = props
 
-  const title = `Wiki - ${wiki.frontmatter.title}`
-
   return (
     <Layout>
-      <Helmet title={title} />
+      <Helmet title={wiki.frontmatter.title} />
 
-      <h1>{title}</h1>
+      <WikiEntry>
+        <h1>{wiki.frontmatter.title}</h1>
 
-      <p>Category: {wiki.frontmatter.category}</p>
+        <p>Category: {wiki.frontmatter.category}</p>
 
-      <section dangerouslySetInnerHTML={{ __html: wiki.html }} />
+        <section
+          className='description'
+          dangerouslySetInnerHTML={{ __html: wiki.html }}
+        />
+      </WikiEntry>
     </Layout>
   )
 }

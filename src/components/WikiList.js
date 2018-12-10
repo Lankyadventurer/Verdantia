@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
+import styled from 'styled-components'
 
 import WikiCategory from './WikiCategory'
 
@@ -22,9 +23,22 @@ const WIKI_LIST_QUERY = graphql`
   }
 `
 
+const CategoryGrid = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 700px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`
+
 export const WikiList = props => {
   return (
-    <ul>
+    <CategoryGrid>
       <StaticQuery query={WIKI_LIST_QUERY}>
         {({ wikiList }) => {
           const { group } = wikiList
@@ -34,7 +48,7 @@ export const WikiList = props => {
           ))
         }}
       </StaticQuery>
-    </ul>
+    </CategoryGrid>
   )
 }
 
