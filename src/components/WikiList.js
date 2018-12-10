@@ -9,6 +9,7 @@ const WIKI_LIST_QUERY = graphql`
     wikiList: allMarkdownRemark(sort: { fields: [frontmatter___title] }) {
       group(field: frontmatter___category) {
         category: fieldValue
+        totalCount
         edges {
           node {
             id
@@ -44,7 +45,12 @@ export const WikiList = props => {
           const { group } = wikiList
 
           return group.map(category => (
-            <WikiCategory key={category.category} {...category} />
+            <section key={category.category}>
+              <h2>
+                {category.category} ({category.totalCount})
+              </h2>
+              <WikiCategory {...category} />
+            </section>
           ))
         }}
       </StaticQuery>

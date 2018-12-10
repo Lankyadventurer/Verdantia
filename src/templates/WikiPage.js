@@ -1,9 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import { normalizeURL } from '../shared/url'
 
 const WikiEntry = styled.article`
   .description {
@@ -35,7 +36,12 @@ export const WikiPage = props => {
       <WikiEntry>
         <h1>{wiki.frontmatter.title}</h1>
 
-        <p>Category: {wiki.frontmatter.category}</p>
+        <p>
+          Category:{' '}
+          <Link to={`/category/${normalizeURL(wiki.frontmatter.category)}`}>
+            {wiki.frontmatter.category}
+          </Link>
+        </p>
 
         <section
           className='description'
@@ -49,7 +55,7 @@ export const WikiPage = props => {
 export default WikiPage
 
 export const query = graphql`
-  query WikiPageQuery($id: String!) {
+  query WIKI_PAGE_QUERY($id: String!) {
     wiki: markdownRemark(id: { eq: $id }) {
       frontmatter {
         category

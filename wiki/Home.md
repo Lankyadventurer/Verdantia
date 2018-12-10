@@ -3,8 +3,6 @@ title: Home
 category: Main
 ---
 
-Placeholder
-
 ## Welcome to the Verdantia Wiki!
 
 This is an attempt to organize lore and feature details for the server.

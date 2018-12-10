@@ -5,7 +5,7 @@ import Page from '../templates/Page'
 
 export const HomePage = props => (
   <Page>
-    <h1>Hello!</h1>
+    <h1>Welcome!</h1>
 
     <WikiList />
   </Page>

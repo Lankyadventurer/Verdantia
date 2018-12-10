@@ -7,14 +7,14 @@ import Header from './Header'
 import Theme from './Theme'
 
 const Page = styled.div`
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2ch;
 `
 
 const Main = styled.main`
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 2em auto 3em auto;
 `
 
 export const Layout = props => (
