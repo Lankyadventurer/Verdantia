@@ -21,4 +21,4 @@ We hope that you will be patient with us under such changes. But fear not! The c
 
 It's easy for rules and expectations to go unspoken within a tight-knit community. For the livelihood of the server, some rules and guidelines are have been written out.
 
-[Rules and Guidelines](./Rules)
+[Rules and Guidelines](/wiki/rules)

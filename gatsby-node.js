@@ -1,6 +1,7 @@
 const { resolve, basename } = require('path')
 
-exports.createPages = ({ actions: { createPage }, graphql }) => {
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
   const wikiTemplate = resolve(__dirname, './src/templates/WikiPage.js')
 
   return graphql(`
