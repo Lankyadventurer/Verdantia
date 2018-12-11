@@ -1,8 +1,14 @@
-const { resolve, basename } = require('path')
+const { resolve } = require('path')
+
+const { filenameToURL, normalizeURL } = require('./src/shared/url')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const wikiTemplate = resolve(__dirname, './src/templates/WikiPage.js')
+  const wikiPage = resolve(__dirname, './src/templates/WikiPage.js')
+  const wikiCategoryPage = resolve(
+    __dirname,
+    './src/templates/WikiCategoryPage.js'
+  )
 
   return graphql(`
     query CreatePagesQuery {
@@ -11,6 +17,9 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             fileAbsolutePath
+            frontmatter {
+              category
+            }
           }
         }
       }
@@ -20,22 +29,37 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(errors)
     }
 
+    const uniqueCategories = new Set()
+
     const {
       wikis: { edges }
     } = data
 
+    // Create a page for each Wiki item
     edges.forEach(({ node }) => {
-      const filename = basename(node.fileAbsolutePath, '.md')
-        .trim()
-        .replace(/ /g, '-')
-        .toLowerCase()
+      const filename = filenameToURL(node.fileAbsolutePath, '.md')
       const wikiPath = `/wiki/${filename}`
+
+      uniqueCategories.add(node.frontmatter.category)
 
       createPage({
         path: wikiPath,
-        component: wikiTemplate,
+        component: wikiPage,
         context: {
           id: node.id
+        }
+      })
+    })
+
+    // Create a page for each Wiki item category
+    uniqueCategories.forEach(category => {
+      const categoryPath = `/category/${normalizeURL(category)}`
+
+      createPage({
+        path: categoryPath,
+        component: wikiCategoryPage,
+        context: {
+          category
         }
       })
     })

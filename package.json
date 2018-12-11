@@ -39,6 +39,7 @@
     "@reach/skip-nav": "^0.1.1",
     "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.64",
+    "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sharp": "^2.0.15",
     "gatsby-plugin-styled-components": "^3.0.4",

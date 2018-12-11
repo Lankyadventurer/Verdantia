@@ -1,8 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import { normalizeURL } from '../shared/url'
+
+const WikiEntry = styled.article`
+  .description {
+    code {
+      background-color: ${props => props.theme.offWhite};
+      padding: 0 0.75ch;
+    }
+  }
+`
 
 /**
  * @param {object} props
@@ -18,17 +29,25 @@ export const WikiPage = props => {
     data: { wiki }
   } = props
 
-  const title = `Wiki - ${wiki.frontmatter.title}`
-
   return (
     <Layout>
-      <Helmet title={title} />
+      <Helmet title={wiki.frontmatter.title} />
 
-      <h1>{title}</h1>
+      <WikiEntry>
+        <h1>{wiki.frontmatter.title}</h1>
 
-      <p>Category: {wiki.frontmatter.category}</p>
+        <p>
+          Category:{' '}
+          <Link to={`/category/${normalizeURL(wiki.frontmatter.category)}`}>
+            {wiki.frontmatter.category}
+          </Link>
+        </p>
 
-      <section dangerouslySetInnerHTML={{ __html: wiki.html }} />
+        <section
+          className='description'
+          dangerouslySetInnerHTML={{ __html: wiki.html }}
+        />
+      </WikiEntry>
     </Layout>
   )
 }
@@ -36,7 +55,7 @@ export const WikiPage = props => {
 export default WikiPage
 
 export const query = graphql`
-  query WikiPageQuery($id: String!) {
+  query WIKI_PAGE_QUERY($id: String!) {
     wiki: markdownRemark(id: { eq: $id }) {
       frontmatter {
         category

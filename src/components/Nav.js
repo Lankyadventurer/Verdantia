@@ -15,7 +15,7 @@ const NavStyles = styled.nav`
 export const Nav = props => (
   <NavStyles>
     <Link to='/'>Home</Link>
-    <Link to='/wiki'>Wiki</Link>
+    <Link to='/category'>Categories</Link>
   </NavStyles>
 )
 

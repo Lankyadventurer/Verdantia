@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { basename } from 'path'
+
+import { filenameToURL } from '../shared/url'
 
 /**
  * Converts the MD file location to the site URL
@@ -9,10 +10,7 @@ import { basename } from 'path'
  * @returns {string}
  */
 export const fileToWiki = wikiMDPath => {
-  const filename = basename(wikiMDPath, '.md')
-    .trim()
-    .replace(/ /g, '-')
-    .toLowerCase()
+  const filename = filenameToURL(wikiMDPath, '.md')
 
   return `/wiki/${filename}`
 }
@@ -23,24 +21,20 @@ export const fileToWiki = wikiMDPath => {
  * @param {Array<{node: { id: string, fileAbsolutePath: string, frontmatter: {title: string} }}>} props.edges
  */
 export const WikiCategory = props => {
-  const { category, edges } = props
+  const { edges } = props
 
   return (
-    <section>
-      <h2>{category}</h2>
+    <ul>
+      {edges.map(({ node }) => {
+        const wikiURL = fileToWiki(node.fileAbsolutePath)
 
-      <ul>
-        {edges.map(({ node }) => {
-          const wikiURL = fileToWiki(node.fileAbsolutePath)
-
-          return (
-            <li key={node.id}>
-              <Link to={wikiURL}>{node.frontmatter.title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-    </section>
+        return (
+          <li key={node.id}>
+            <Link to={wikiURL}>{node.frontmatter.title}</Link>
+          </li>
+        )
+      })}
+    </ul>
   )
 }
 

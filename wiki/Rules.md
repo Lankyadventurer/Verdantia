@@ -3,8 +3,6 @@ title: Rules
 category: Main
 ---
 
-Placeholder
-
 ## General Rules
 
 1. **Treat others with respect.**

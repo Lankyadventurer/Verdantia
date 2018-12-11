@@ -3,7 +3,6 @@ title: Quickstart
 category: Main
 ---
 
-Placeholder
 Here's a quick guide for getting started in Verdantia!
 
 - [Optifine](https://optifine.net/downloads): Greatly enhances video settings. It's common to double your fps, and is needed for the resource pack.
