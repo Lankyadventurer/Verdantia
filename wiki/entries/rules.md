@@ -24,7 +24,7 @@ category: Main
 
 There is a currency system in place for player and NPC transactions. It is basically `9 iron = 1 gold` ratio (i.e. 9 iron ingots = 1 gold ingot).
 
-![Currency infographic](../media/currency.png)
+![Currency info-graphic](../media/currency.png)
 
 ## Roleplay Guidelines
 
