@@ -7,7 +7,10 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: { htmlTitle: 'Content Manager | Verdantia' }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
