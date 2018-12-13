@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -26,6 +27,7 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    'gatsby-plugin-netlify' // Must be placed last in the list
   ]
 }
