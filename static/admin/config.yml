@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: dev
+
+publish_mode: editorial_workflow
+
+media_folder: 'wiki/media'
+public_folder: '../media'
+
+collections:
+  - name: 'wiki' # Used in routes, e.g., /admin/collections/blog
+    label: 'Wiki Entry' # Used in the UI
+    folder: 'wiki/entries' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'string',
+          default: 'Main',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+        }
