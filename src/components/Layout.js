@@ -13,8 +13,8 @@ const Page = styled.div`
 `
 
 const Main = styled.main`
-  max-width: 850px;
   margin: 2em auto 3em auto;
+  max-width: 750px;
 `
 
 export const Layout = props => (

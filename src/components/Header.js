@@ -4,11 +4,14 @@ import styled from 'styled-components'
 
 import Nav from './Nav'
 
-const HeaderStyles = styled.header``
+const HeaderStyles = styled.header`
+  margin: 0.75em 0;
+`
 
 const HeaderTitle = styled.section`
   font-family: ${props => props.theme.displayFont};
   font-size: 2em;
+  margin-bottom: 0.25em;
 
   a {
     display: inline-block;

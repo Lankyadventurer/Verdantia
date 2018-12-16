@@ -35,6 +35,12 @@ const CategoryGrid = styled.section`
   @media screen and (min-width: 700px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .category {
+    h2 {
+      margin-top: 0;
+    }
+  }
 `
 
 export const WikiList = props => {
@@ -45,7 +51,7 @@ export const WikiList = props => {
           const { group } = wikiList
 
           return group.map(category => (
-            <section key={category.category}>
+            <section className='category' key={category.category}>
               <h2>
                 {category.category} ({category.totalCount})
               </h2>

@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${props => props.theme.backgroundColor};
     color: ${props => props.theme.black};
     font-family: ${props => props.theme.baseFont};
-    line-height: 2;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
   }
@@ -78,6 +78,10 @@ const GlobalStyles = createGlobalStyle`
     &:active {
       color: ${props => props.theme.accentColor};
     }
+  }
+
+  p {
+    margin-bottom: 2em;
   }
 
   [data-reach-skip-link] {

@@ -7,7 +7,7 @@ const NavStyles = styled.nav`
 
   a {
     display: inline-block;
-    padding: 0 1ch;
+    padding: 0.25em 1ch;
     text-decoration: none;
   }
 `
