@@ -1,5 +1,4 @@
 # Babel Compiled Output
-dist/
 .cache/
 public/
 

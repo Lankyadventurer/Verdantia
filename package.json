@@ -6,7 +6,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "npm run prettier && npm run lint -- --fix",
-    "lint": "eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|yml|yaml|css|less|ts|md|graphql|mdx)\"",
     "test": "npm run lint && jest --coverage"
   },
