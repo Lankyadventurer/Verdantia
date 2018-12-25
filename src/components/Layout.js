@@ -9,7 +9,7 @@ import Theme from './Theme'
 const Page = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 2ch;
+  padding: 0 0.5em;
 `
 
 const Main = styled.main`
@@ -20,9 +20,9 @@ const Main = styled.main`
 export const Layout = props => (
   <Theme>
     <Helmet defaultTitle='Verdantia' titleTemplate='%s | Verdantia' />
-    <SkipNavLink />
 
     <Page>
+      <SkipNavLink />
       <Header />
       <SkipNavContent />
       <Main>{props.children}</Main>
