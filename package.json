@@ -52,6 +52,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.2.2",
     "styled-components": "^4.1.3",
     "typeface-croissant-one": "0.0.71",
     "typeface-montserrat": "0.0.54"
