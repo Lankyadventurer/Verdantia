@@ -26,15 +26,7 @@ const WIKI_LIST_QUERY = graphql`
 
 const CategoryGrid = styled.section`
   display: grid;
-  grid-template-columns: 1fr;
-
-  @media screen and (min-width: 500px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (min-width: 700px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
 
   .category {
     h2 {

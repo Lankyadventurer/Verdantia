@@ -6,6 +6,10 @@ import Nav from './Nav'
 
 const HeaderStyles = styled.header`
   margin: 0.75em 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
 `
 
 const HeaderTitle = styled.section`
@@ -16,6 +20,7 @@ const HeaderTitle = styled.section`
   a {
     display: inline-block;
     text-decoration: none;
+    margin-right: 1ch;
   }
 `
 
