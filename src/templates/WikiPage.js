@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import { FaPen } from 'react-icons/fa'
 
-import Layout from '../components/Layout'
 import { filenameToURL, normalizeURL } from '../shared/url'
 
 const WikiEntry = styled.article`
@@ -38,37 +37,35 @@ export const WikiPage = props => {
   } = props
 
   return (
-    <Layout>
+    <WikiEntry>
       <Helmet title={wiki.frontmatter.title} />
 
-      <WikiEntry>
-        <h1>{wiki.frontmatter.title}</h1>
+      <h1>{wiki.frontmatter.title}</h1>
 
-        <a
-          className='edit-link'
-          href={`/admin/#/collections/wiki/entries/${filenameToURL(
-            wiki.fileAbsolutePath,
-            '.md'
-          )}`}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Edit <FaPen />
-        </a>
+      <a
+        className='edit-link'
+        href={`/admin/#/collections/wiki/entries/${filenameToURL(
+          wiki.fileAbsolutePath,
+          '.md'
+        )}`}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Edit <FaPen />
+      </a>
 
-        <p>
-          Category:{' '}
-          <Link to={`/category/${normalizeURL(wiki.frontmatter.category)}`}>
-            {wiki.frontmatter.category}
-          </Link>
-        </p>
+      <p>
+        Category:{' '}
+        <Link to={`/category/${normalizeURL(wiki.frontmatter.category)}`}>
+          {wiki.frontmatter.category}
+        </Link>
+      </p>
 
-        <section
-          className='description'
-          dangerouslySetInnerHTML={{ __html: wiki.html }}
-        />
-      </WikiEntry>
-    </Layout>
+      <section
+        className='description'
+        dangerouslySetInnerHTML={{ __html: wiki.html }}
+      />
+    </WikiEntry>
   )
 }
 

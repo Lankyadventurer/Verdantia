@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import WikiCategory from '../components/WikiCategory'
-import Layout from '../components/Layout'
 
 /**
  *
@@ -21,14 +20,15 @@ export const WikiCategoryPage = props => {
   const { category, totalCount, edges } = group[0]
 
   return (
-    <Layout>
+    <React.Fragment>
       <Helmet title={category} />
 
       <h1>
         {category} ({totalCount})
       </h1>
+
       <WikiCategory category={category} edges={edges} />
-    </Layout>
+    </React.Fragment>
   )
 }
 

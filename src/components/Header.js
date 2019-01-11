@@ -4,34 +4,29 @@ import styled from 'styled-components'
 
 import Nav from './Nav'
 
-const HeaderStyles = styled.header`
+const StyledHeader = styled.header`
   margin: 0.75em 0;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  align-items: center;
-`
 
-const HeaderTitle = styled.section`
-  font-family: ${props => props.theme.displayFont};
-  font-size: 2em;
-  margin-bottom: 0.25em;
+  .brand {
+    font-family: ${props => props.theme.displayFont};
+    font-size: 2em;
 
-  a {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 1ch;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 1ch;
+    }
   }
 `
 
 export const Header = props => (
-  <HeaderStyles>
-    <HeaderTitle>
+  <StyledHeader>
+    <section className='brand'>
       <Link to='/'>Verdantia</Link>
-    </HeaderTitle>
+    </section>
 
     <Nav />
-  </HeaderStyles>
+  </StyledHeader>
 )
 
 export default Header

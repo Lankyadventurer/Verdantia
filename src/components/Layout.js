@@ -19,18 +19,34 @@ const Main = styled.main`
   min-height: 75vh;
 `
 
-export const Layout = props => (
-  <Theme>
-    <Helmet defaultTitle='Verdantia' titleTemplate='%s | Verdantia' />
+export class Layout extends React.Component {
+  state = { jsEnabled: false }
 
-    <Page>
-      <SkipNavLink />
-      <Header />
-      <SkipNavContent />
-      <Main>{props.children}</Main>
-      <Footer />
-    </Page>
-  </Theme>
-)
+  componentDidMount () {
+    // Only runs when JS is not disabled on the browser
+    this.setState({ jsEnabled: true })
+  }
+
+  render () {
+    const {
+      props: { children },
+      state: { jsEnabled }
+    } = this
+
+    return (
+      <Theme>
+        <Helmet defaultTitle='Verdantia' titleTemplate='%s | Verdantia' />
+
+        <Page className={jsEnabled ? 'js' : ''}>
+          <SkipNavLink />
+          <Header />
+          <SkipNavContent />
+          <Main>{children}</Main>
+          <Footer />
+        </Page>
+      </Theme>
+    )
+  }
+}
 
 export default Layout
