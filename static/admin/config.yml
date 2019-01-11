@@ -8,21 +8,125 @@ media_folder: 'wiki/media'
 public_folder: '../media'
 
 collections:
-  - name: 'wiki' # Used in routes, e.g., /admin/collections/blog
-    label: 'Wiki Entries'
-    label_singular: 'Wiki Entry'
-    description: 'Add to the collective lore of the realm'
-    folder: 'wiki/entries' # The path to the folder where the documents are stored
+  - name: 'characters' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Characters'
+    label_singular: 'Character'
+    description: 'Notable characters of the land'
+    folder: 'wiki/entries/characters'
     create: true
     delete: false
     extension: 'md'
     slug: '{{slug}}' # Filename template, e.g., title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Title', name: 'title', widget: 'string' }
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
           label: 'Category',
           name: 'category',
-          widget: 'string',
+          widget: 'hidden',
+          default: 'Characters',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'classes' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Classes'
+    label_singular: 'Class'
+    description: 'Various classes and their unique abilities'
+    folder: 'wiki/entries/classes'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
+          default: 'Classes',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'factions' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Factions'
+    label_singular: 'Faction'
+    description: 'Various organizations and groups united for shared goals'
+    folder: 'wiki/entries/factions'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
+          default: 'Factions',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'locations' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Locations'
+    label_singular: 'Location'
+    description: 'Points of interests scattered throughout Verdantia'
+    folder: 'wiki/entries/locations'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
+          default: 'Locations',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'main' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Main'
+    label_singular: 'Main'
+    description: 'Main pages for the site'
+    folder: 'wiki/entries/main'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
           default: 'Main',
         }
       - {
@@ -30,6 +134,59 @@ collections:
           name: 'body',
           widget: 'markdown',
           default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'monsters' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Monsters'
+    label_singular: 'Monster'
+    description: 'Creatures who serve only their own desire and instincts'
+    folder: 'wiki/entries/monsters'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
+          default: 'Monsters',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
+        }
+    editor:
+      preview: false
+  - name: 'races' # Used in routes, e.g., /admin/collections/[name]
+    label: 'Races'
+    label_singular: 'Race'
+    description: 'The denizens of the realm of Verdantia'
+    folder: 'wiki/entries/races'
+    create: true
+    delete: false
+    extension: 'md'
+    slug: '{{slug}}' # Filename template, e.g., title.md
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'hidden',
+          default: 'Races',
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default: 'Placeholder',
+          required: true,
         }
     editor:
       preview: false
